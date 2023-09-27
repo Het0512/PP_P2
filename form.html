@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Application</h1>
+    <form>
+        <fieldset>
+            <legend>Name</legend>
+            First name:<br>
+            <input type="text" name="firstname"><br>
+            Last name:<br>
+            <input type="text" name="lastname">
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </fieldset>
+        <fieldset>
+            <legend>Age</legend>
+            <input type="number" name="points" min="1" max="100" step="1" value="20">
+            <input type="date" name="bday">
+        </fieldset>
+        <fieldset>
+            <legend>Grade</legend>
+            <select id="grade" name="grade">
+                <option value="freshmen ">Freshmen </option>
+                <option value="sophomore ">Sophomore </option>
+                <option value="junior ">Junior </option>
+                <option value="senior ">Senior </option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Contact information</legend>
+            E-mail:
+            <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
+            Telephone:
+            <input type="tel" id="phone" name="phone" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+        </fieldset>
+        <fieldset>
+            <legend>Possible start time</legend>
+            <input type="time" name="usr_time">
+        </fieldset>
+        <fieldset>
+            <legend>Possible programming Languages</legend>
+            *Choose all*<br>
+            <input type="checkbox" id="language1" name="language1" value="C">
+            <label for="language1"> C</label><br>
+            <input type="checkbox" id="language2" name="language2" value="C++">
+            <label for="language1"> C++</label><br>
+            <input type="checkbox" id="language3" name="language3" value="C#">
+            <label for="language1"> C#</label><br>
+            <input type="checkbox" id="language4" name="language4" value="Java">
+            <label for="language4"> Java</label><br>
+            <input type="checkbox" id="language5" name="language5" value="Python">
+            <label for="language5"> Python</label><br>
+            <input type="checkbox" id="language6" name="language6" value="JavaScript">
+            <label for="language6"> JavaScript</label>
+        </fieldset>
+        <fieldset>
+            <legend>Write down what you want to say last</legend>
+            <textarea name="message" rows="10" cols="100">ex) I'll do my best. I look forward to your kind cooperation.</textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
